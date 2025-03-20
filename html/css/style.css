@@ -227,11 +227,11 @@ button {
 /* header top section start */
 
 .header_section_top {
-    width: 100%;
-    float: left;
+    display: flex;
+    justify-content: center;
     background-color: #2b2a29;
     height: auto;
-    padding: 10px 0px;
+    padding: 10px;
 }
 
 .custom_menu {
@@ -278,6 +278,11 @@ button {
     text-align: center;
 }
 
+.logo img#logo_img {
+    max-width: 175px;
+    margin: -37px 0 -30px -30px;
+}
+
 
 /* logo section end */
 
@@ -287,12 +292,17 @@ button {
 .header_section {
     width: 100%;
     display: flex;
+    margin: 0 auto;
+    max-width: 1126px;
+    text-align: center;
 }
 
 .containt_main {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 
@@ -348,7 +358,6 @@ button {
 }
 
 .header_box {
-    order: 2;
     display: flex;
 }
 
@@ -390,7 +399,6 @@ button {
     flex: 1;
     margin: 0px 30px;
     display: inline-block;
-    order: 2;
     width: 100%;
 }
 
@@ -448,6 +456,11 @@ button {
     padding-left: 10px;
 }
 
+/* gerado pelo chat gpt*/
+.login_menu i.fa-shopping-cart {
+    transform: scale(1.5); /* Aumenta em 1.5x */
+    margin-left: 5px;      /* Ajusta o espaçamento se necessário */
+}
 
 /* flage css start */
 
@@ -496,7 +509,6 @@ a:hover {
 .buynow_bt {
     width: 170px;
     margin: 0 auto;
-    padding-top: 30px;
 }
 
 .buynow_bt a {
@@ -504,16 +516,14 @@ a:hover {
     float: left;
     font-size: 16px;
     color: #ffffff;
-    background-color: #252525;
+    background-color: #610c86;
     text-align: center;
     padding: 10px 0px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
+    border-radius: 30px;
 }
 
 .buynow_bt a:hover {
-    background-color: #f26522;
+    background-color: #4e096c;
     color: #ffffff;
 }
 
