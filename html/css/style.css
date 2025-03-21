@@ -293,7 +293,6 @@ button {
     width: 100%;
     display: flex;
     margin: 0 auto;
-    max-width: 1126px;
     text-align: center;
 }
 
@@ -305,6 +304,60 @@ button {
     margin: 0 auto;
 }
 
+.content_section {
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.row1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.row2 {
+    display: flex;
+    flex-wrap: nowrap; /* Impede que os itens quebrem para a linha de baixo */
+    justify-content: space-between; /* Distribui os itens com o máximo de espaço entre eles */
+    align-items: center; /* Alinha verticalmente todos os itens */
+    margin-top: 20px;
+    width: 100%;
+}
+
+.row2 ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite a quebra de linha se necessário para os itens da lista */
+    justify-content: space-between;
+    width: auto; /* Ajuste para que o ul não ocupe toda a largura */
+    flex-grow: 0.5; /* Faz com que a lista ocupe o espaço disponível */
+}
+
+.row2 li {
+    font-size: 16px;
+    color: #f1f1f1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Permite que os itens cresçam */
+    max-width: 300px; /* Limita o tamanho máximo dos itens */
+    line-height: 1;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.row2 li a {
+    color: #f1f1f1;
+    word-wrap: break-word; /* Permite que o texto quebre dentro do link */
+}
+
+.row2 li a:hover {
+    color: #f26522;
+}
 
 /* opennav bar start */
 
@@ -399,7 +452,7 @@ button {
     flex: 1;
     margin: 0px 30px;
     display: inline-block;
-    width: 100%;
+    max-width: 400px;
 }
 
 
@@ -425,6 +478,7 @@ button {
 /* Styles for wrapping the search box end */
 
 .login_menu {
+    margin-left: 100px;
     display: flex;
     text-align: right;
     float: right;
@@ -523,6 +577,27 @@ a:hover {
 }
 
 .buynow_bt a:hover {
+    background-color: #4e096c;
+    color: #ffffff;
+}
+
+.ofertas_bt {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.ofertas_bt a {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #610c86;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 30px;
+}
+
+.ofertas_bt a:hover {
     background-color: #4e096c;
     color: #ffffff;
 }
