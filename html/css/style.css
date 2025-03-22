@@ -315,13 +315,14 @@ button {
 .row1 {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     gap: 20px;
 }
 
 .row2 {
     display: flex;
     flex-wrap: nowrap; /* Impede que os itens quebrem para a linha de baixo */
-    justify-content: space-between; /* Distribui os itens com o máximo de espaço entre eles */
+    justify-content: space-around; /* Distribui os itens com o máximo de espaço entre eles */
     align-items: center; /* Alinha verticalmente todos os itens */
     margin-top: 20px;
     width: 100%;
@@ -331,7 +332,6 @@ button {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Permite a quebra de linha se necessário para os itens da lista */
     justify-content: space-between;
     width: auto; /* Ajuste para que o ul não ocupe toda a largura */
     flex-grow: 0.5; /* Faz com que a lista ocupe o espaço disponível */
@@ -344,7 +344,8 @@ button {
     align-items: center;
     justify-content: center;
     flex-grow: 1; /* Permite que os itens cresçam */
-    max-width: 300px; /* Limita o tamanho máximo dos itens */
+    max-width: 200px; /* Limita o tamanho máximo dos itens */
+    min-width: 75px;
     line-height: 1;
     word-wrap: break-word;
     word-break: break-word;
@@ -487,6 +488,9 @@ button {
 .login_menu ul {
     margin: 0px;
     padding: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .login_menu li {
