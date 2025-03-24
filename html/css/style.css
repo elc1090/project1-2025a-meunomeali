@@ -550,18 +550,55 @@ a:hover {
 /* banner section start */
 
 .banner_section {
+    display: flex;
+    justify-content: center;
     width: 100%;
     float: left;
     padding-bottom: 60px;
 }
 
-.banner_taital {
-    width: 100%;
-    font-size: 60px;
-    color: #ffffff;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
+.banner_section img#produto_img{
+    min-width: 650px;
+    border: 4px solid #f2f5f8;
+}
+
+.rightCol {
+    border: 2px solid #d5dadf;
+    float: right;
+    width: 244px;
+    margin-left: 20px;
+}
+
+.rightColInner {
+    position: relative;
+    padding: 14px 18px;
+}
+
+.rowPreco {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 28px;
+    color: #000000;
+}
+
+.rowParcelas {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #454545;
+}
+
+.rowEstoque {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: #007600;
 }
 
 .buynow_bt {
@@ -604,34 +641,6 @@ a:hover {
 .ofertas_bt a:hover {
     background-color: #4e096c;
     color: #ffffff;
-}
-
-#my_slider a.carousel-control-next {
-    right: 0px;
-    top: 40px;
-}
-
-#my_slider a.carousel-control-prev {
-    left: 0px;
-    top: 40px;
-}
-
-#my_slider .carousel-control-next,
-#my_slider .carousel-control-prev {
-    width: 45px;
-    height: 45px;
-    background: rgb(242, 222, 172, 0.80);
-    opacity: 1;
-    font-size: 20px;
-    color: #000;
-    border-radius: 100px;
-}
-
-#my_slider .carousel-control-next:focus,
-#my_slider .carousel-control-next:hover,
-#my_slider .carousel-control-prev:focus,
-#my_slider .carousel-control-prev:hover {
-    color: #fff;
 }
 
 
