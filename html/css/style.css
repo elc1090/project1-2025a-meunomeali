@@ -423,20 +423,24 @@ button {
     margin: 0 auto;
     text-align: center;
     display: inline-block;
-    margin-left: 30px;
     order: 2;
+    border-radius: 10px;
 }
 
 .btn-secondary {
-    color: #fff;
-    background-color: #30302e;
-    border-color: #30302e;
+    color: #000000;
+    background-color: #f0f2f2;
+    border-color: #d5dadf;
+    border-radius: 10px;
+
 }
 
 .btn-secondary:hover {
-    color: #fff;
-    background-color: #30302e;
-    border-color: #30302e;
+    color: #000000;
+    background-color: #cacaca;
+    border-color: #d5dadf;
+    border-radius: 10px;
+
 }
 
 .show>.btn-secondary.dropdown-toggle:focus {
@@ -551,22 +555,28 @@ a:hover {
 
 .banner_section {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
     float: left;
     padding-bottom: 60px;
 }
 
 .banner_section img#produto_img{
-    min-width: 650px;
+    min-width: 400px;
     border: 4px solid #f2f5f8;
+}
+
+.leftCol {
+    width: 500px;
+    min-height: 605px;
 }
 
 .rightCol {
     border: 2px solid #d5dadf;
     float: right;
-    width: 244px;
+    min-width: 244px;
     margin-left: 20px;
+    border-radius: 10px;
 }
 
 .rightColInner {
@@ -590,6 +600,16 @@ a:hover {
     gap: 10px;
     font-size: 14px;
     color: #454545;
+    margin-bottom: 20px;
+}
+
+.rowFrete {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #454545;
 }
 
 .rowEstoque {
@@ -599,6 +619,86 @@ a:hover {
     gap: 10px;
     font-size: 18px;
     color: #007600;
+    margin-bottom: 10px;
+}
+
+.rowCarrinho{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: #000000;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.rowComprar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: #000000;
+}
+
+.carrinho_bt {
+    width: 175px;
+    margin: 0 auto;
+}
+
+.carrinho_bt a {
+    width: 100%;
+    float: left;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: #610c86;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 30px;
+}
+
+.carrinho_bt a:hover {
+    background-color: #4e096c;
+    color: #ffffff;
+}
+
+.comprar_bt {
+    width: 175px;
+    margin: 0 auto;
+}
+
+.comprar_bt a {
+    width: 100%;
+    float: left;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: #610c86;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 30px;
+}
+
+.comprar_bt a:hover {
+    background-color: #4e096c;
+    color: #ffffff;
+}
+
+.centerColAlign {
+    
+    margin-left: 30px;
+    margin-right: 270px;
+}
+
+.produto_nome{
+    font-size: 42px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: left;
+    color: #323643;
 }
 
 .buynow_bt {
