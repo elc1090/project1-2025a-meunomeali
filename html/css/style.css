@@ -227,12 +227,11 @@ button {
 /* header top section start */
 
 .header_section_top {
-    width: 100%;
-    float: left;
+    display: flex;
+    justify-content: center;
     background-color: #2b2a29;
-    clip-path: polygon(0 0, 100% 0, 96% 100%, 3% 100%);
     height: auto;
-    padding: 10px 0px;
+    padding: 10px;
 }
 
 .custom_menu {
@@ -269,15 +268,19 @@ button {
 /* logo section start */
 
 .logo_section {
-    width: 100%;
+    width: auto;
     float: left;
 }
 
 .logo {
-    width: 100%;
+    width: auto;
     float: left;
     text-align: center;
-    padding: 30px 0px;
+}
+
+.logo img#logo_img {
+    max-width: 175px;
+    margin: -37px 0 -30px -30px;
 }
 
 
@@ -289,12 +292,73 @@ button {
 .header_section {
     width: 100%;
     display: flex;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .containt_main {
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
+.content_section {
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.row2 {
+    display: flex;
+    flex-wrap: nowrap; /* Impede que os itens quebrem para a linha de baixo */
+    justify-content: space-around; /* Distribui os itens com o máximo de espaço entre eles */
+    align-items: center; /* Alinha verticalmente todos os itens */
+    margin-top: 20px;
+    width: 100%;
+}
+
+.row2 ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: auto; /* Ajuste para que o ul não ocupe toda a largura */
+    flex-grow: 0.5; /* Faz com que a lista ocupe o espaço disponível */
+}
+
+.row2 li {
+    font-size: 16px;
+    color: #f1f1f1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Permite que os itens cresçam */
+    max-width: 200px; /* Limita o tamanho máximo dos itens */
+    min-width: 75px;
+    line-height: 1;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.row2 li a {
+    color: #f1f1f1;
+    word-wrap: break-word; /* Permite que o texto quebre dentro do link */
+}
+
+.row2 li a:hover {
+    color: #f26522;
+}
 
 /* opennav bar start */
 
@@ -348,7 +412,6 @@ button {
 }
 
 .header_box {
-    order: 2;
     display: flex;
 }
 
@@ -360,20 +423,24 @@ button {
     margin: 0 auto;
     text-align: center;
     display: inline-block;
-    margin-left: 30px;
     order: 2;
+    border-radius: 10px;
 }
 
 .btn-secondary {
-    color: #fff;
-    background-color: #30302e;
-    border-color: #30302e;
+    color: #000000;
+    background-color: #f0f2f2;
+    border-color: #d5dadf;
+    border-radius: 10px;
+
 }
 
 .btn-secondary:hover {
-    color: #fff;
-    background-color: #30302e;
-    border-color: #30302e;
+    color: #000000;
+    background-color: #cacaca;
+    border-color: #d5dadf;
+    border-radius: 10px;
+
 }
 
 .show>.btn-secondary.dropdown-toggle:focus {
@@ -390,7 +457,7 @@ button {
     flex: 1;
     margin: 0px 30px;
     display: inline-block;
-    order: 2;
+    max-width: 400px;
 }
 
 
@@ -416,6 +483,7 @@ button {
 /* Styles for wrapping the search box end */
 
 .login_menu {
+    margin-left: 100px;
     display: flex;
     text-align: right;
     float: right;
@@ -424,6 +492,9 @@ button {
 .login_menu ul {
     margin: 0px;
     padding: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .login_menu li {
@@ -447,6 +518,11 @@ button {
     padding-left: 10px;
 }
 
+/* gerado pelo chat gpt*/
+.login_menu i.fa-shopping-cart {
+    transform: scale(1.5); /* Aumenta em 1.5x */
+    margin-left: 5px;      /* Ajusta o espaçamento se necessário */
+}
 
 /* flage css start */
 
@@ -478,24 +554,168 @@ a:hover {
 /* banner section start */
 
 .banner_section {
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     float: left;
     padding-bottom: 60px;
 }
 
-.banner_taital {
+.banner_section img#produto_img{
+    min-width: 400px;
+    border: 4px solid #f2f5f8;
+}
+
+.leftCol {
+    width: 500px;
+    min-height: 605px;
+}
+
+.rightCol {
+    border: 2px solid #d5dadf;
+    float: right;
+    min-width: 244px;
+    margin-left: 20px;
+    border-radius: 10px;
+    max-height: 550px;
+}
+
+.rightColInner {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around; 
+    height: 100%;
+    padding: 14px 18px;
+    gap: 10px; 
+}
+
+.rowPreco {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 28px;
+    color: #000000;
+}
+
+.rowParcelas {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #454545;
+}
+
+.rowFrete {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #454545;
+}
+
+.rowEstoque {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: #007600;
+}
+
+.rowCarrinho{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: #000000;
+}
+
+.rowComprar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: #000000;
+}
+
+.carrinho_bt {
+    width: 175px;
+    margin: 0 auto;
+}
+
+.carrinho_bt a {
     width: 100%;
-    font-size: 60px;
+    float: left;
+    font-size: 13px;
     color: #ffffff;
+    background-color: #610c86;
     text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
+    padding: 10px 0px;
+    border-radius: 30px;
+}
+
+.carrinho_bt a:hover {
+    background-color: #4e096c;
+    color: #ffffff;
+}
+
+.comprar_bt {
+    width: 175px;
+    margin: 0 auto;
+}
+
+.comprar_bt a {
+    width: 100%;
+    float: left;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: #610c86;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 30px;
+}
+
+.comprar_bt a:hover {
+    background-color: #4e096c;
+    color: #ffffff;
+}
+
+.centerColAlign {
+    margin-left: 30px;
+    margin-right: 30px;
+    min-width: 400px;
+    max-width: 500px;
+}
+
+.produto_nome{
+    font-size: 42px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: left;
+    color: #323643;
+}
+
+.produto_descricao {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.25;
+    color: #323643;
+    font-weight: 300;
+    margin-top: 31px;
+    letter-spacing: normal;
 }
 
 .buynow_bt {
     width: 170px;
     margin: 0 auto;
-    padding-top: 30px;
 }
 
 .buynow_bt a {
@@ -503,49 +723,89 @@ a:hover {
     float: left;
     font-size: 16px;
     color: #ffffff;
-    background-color: #252525;
+    background-color: #610c86;
     text-align: center;
     padding: 10px 0px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
+    border-radius: 30px;
 }
 
 .buynow_bt a:hover {
-    background-color: #f26522;
+    background-color: #4e096c;
     color: #ffffff;
 }
 
-#my_slider a.carousel-control-next {
-    right: 0px;
-    top: 40px;
+#btnComprar {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #f26522;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 30px;
 }
 
-#my_slider a.carousel-control-prev {
-    left: 0px;
-    top: 40px;
+.ofertas_bt {
+    width: 100px;
+    margin: 0 auto;
 }
 
-#my_slider .carousel-control-next,
-#my_slider .carousel-control-prev {
-    width: 45px;
-    height: 45px;
-    background: rgb(242, 222, 172, 0.80);
-    opacity: 1;
-    font-size: 20px;
-    color: #000;
-    border-radius: 100px;
+.ofertas_bt a {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #610c86;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 30px;
 }
 
-#my_slider .carousel-control-next:focus,
-#my_slider .carousel-control-next:hover,
-#my_slider .carousel-control-prev:focus,
-#my_slider .carousel-control-prev:hover {
-    color: #fff;
+.ofertas_bt a:hover {
+    background-color: #4e096c;
+    color: #ffffff;
 }
 
 
 /* banner section end */
+
+.especificacoes_tec {
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: left;
+    color: #323643;
+}
+
+.lista-detalhes {
+    background-color: #f4f8fc;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* gerado pelo chat gpt*/
+.item {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    padding: 5px 10px;
+    border-bottom: 1px solid #e0e6ec;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.titulo {
+    font-weight: bold;
+    color: #4a4a4a;
+    padding-right: 10px;
+}
 
 
 /* fashion section start */
