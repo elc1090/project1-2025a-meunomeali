@@ -11,7 +11,7 @@ Imagens do **site criado**:
 Acesso: https://elc1090.github.io/project1-2025a-meunomeali/html/
 
 
-#### Desenvolvedor(a)
+#### Desenvolvedor
 Álisson Braga Canabarro, Ciência da Computação
 
 #### Cliente
@@ -27,7 +27,7 @@ https://lojagrow.com.br/jogo-radar/p
 
 ##### Descrição
 É um site de venda de jogos de tabuleiro.  
-A página dos produtos tem no topo uma imagem grande do produto com o preço e as formas de pagamento ao lado da imagem, as informações do produto fica abaixo da imagem e do preço.
+A página dos produtos possui, no topo, uma imagem grande do produto, com o preço e as formas de pagamento ao lado da imagem. As informações do produto ficam abaixo da imagem e do preço.
 
 #### Demanda do(a) cliente
 Melhorar o design de uma página de um dos produtos.
@@ -35,7 +35,7 @@ Melhorar o design de uma página de um dos produtos.
 #### Desenvolvimento
 
 Como não tenho experiência em desenvolvimento web, escolhi um template de site estático e trabalhei em cima dele.  
-Comecei tentando deixar o header similar ao do site original e para tentar melhorar a página do produto (como dito na demanda), tentei deixar similar ao modelo da Amazon: imagem do produto na esquerda, detalhes no meio, opção de compra na direita e em baixo de tudo as especificações técnicas.  
+Comecei tentando deixar o header similar ao do site original e, para tentar melhorar a página do produto (como dito na demanda), tentei deixar o layout similar ao modelo da Amazon: imagem do produto na esquerda, detalhes no meio, opção de compra na direita e em baixo de tudo as especificações técnicas.  
 As imagens e a descrição do produto foram retirados do site original.  
 Do template usado, mantive (sem muitas alterações) os botões e o carrossel de itens, de resto modifiquei quase tudo (como pode ser visto [aqui](https://github.com/elc1090/project1-2025a-meunomeali/compare/7359363aea055a8fb47c9cfff559811564117242..241247a68b0a365cd7430a9e0ecea34e7003e88b))
 
